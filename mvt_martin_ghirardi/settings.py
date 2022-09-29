@@ -55,7 +55,8 @@ ROOT_URLCONF = "mvt_martin_ghirardi.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ["/Users/lourdesmartinez/MVT Martin Ghirardi/mvt_martin_ghirardi/AppEntregable/templates"],
+        "DIRS": [
+            f"{BASE_DIR}/mvt_martin_ghirardi/AppEntregable/templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
