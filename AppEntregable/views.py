@@ -5,7 +5,7 @@ from django.template import loader
 
 from AppEntregable.models import Familiar
 
-def crear_familiar(request):
+def crear_familiar(request) -> HttpResponse:
     template = loader.get_template("template1.html")
     familia = Familiar(nombre = "Santiago", nacimiento = "2020-7-7", edad = "2")
     familia_2 = Familiar(nombre = "Marta", nacimiento = "1970-6-7", edad = "52")
